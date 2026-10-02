@@ -1,0 +1,11 @@
+incident_id,detected_month,severity,metric,value,amber_threshold,red_threshold,evidence,affected_segment,status
+INC-202404-CAL,2024-04,AMBER,Calibration ratio,1.15446840004803,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202405-CAL,2024-05,AMBER,Calibration ratio,1.251486237097157,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202406-GIN,2024-06,AMBER,Gini decay,0.864456123235258,0.9,0.8,ranking power deterioration,Portfolio,Open
+INC-202406-CAL,2024-06,AMBER,Calibration ratio,1.2253489971587175,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202407-CAL,2024-07,AMBER,Calibration ratio,1.2339619879146615,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202408-CAL,2024-08,RED,Calibration ratio,1.3382767844783015,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202409-CAL,2024-09,RED,Calibration ratio,1.3998537312119677,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202410-CAL,2024-10,RED,Calibration ratio,1.4995611203703998,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202411-CAL,2024-11,RED,Calibration ratio,1.4414855616963367,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open
+INC-202412-CAL,2024-12,RED,Calibration ratio,1.651475921948077,1.15,1.3,actual risk exceeds predicted risk,Portfolio,Open

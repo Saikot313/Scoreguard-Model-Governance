@@ -1,0 +1,31 @@
+# Local Python environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Project files excluded from GitHub
+python/03_policy.py
+R/01_scorecard.R
+
+# Policy artifacts
+outputs/cutoff.json
+outputs/policy_bands.csv
+outputs/fig_cutoff.png
+reports/credit_policy_memo.md
+
+# R local files
+.RData
+.Rhistory
+.Rproj.user/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# IDE
+.vscode/
+.idea/

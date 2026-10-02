@@ -1,0 +1,264 @@
+<!doctype html><html><head><meta charset='utf-8'><title>ScoreGuard Monthly Model Governance Report</title>
+<style>body{font-family:Arial;max-width:1100px;margin:40px auto;line-height:1.5}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;padding:8px}th{background:#f3f4f6}.card{display:inline-block;padding:18px;margin:6px;border:1px solid #ddd;border-radius:10px}.red{color:#b91c1c}.amber{color:#b45309}.green{color:#15803d}</style></head><body>
+<h1>ScoreGuard Monthly Model Governance Report</h1><p><b>As of:</b> 2024-12 &nbsp; <b>Data:</b> simulated SME portfolio</p>
+<div class='card'><b>Model Health</b><br><span class='red'>89.0/100 (RED)</span></div>
+<div class='card'><b>Score PSI</b><br>0.100</div><div class='card'><b>Rolling Gini</b><br>0.325</div>
+<div class='card'><b>Calibration Ratio</b><br>1.65</div><div class='card'><b>Open Incidents</b><br>10</div>
+<h2>Key Findings</h2><ul><li>Score PSI alone is not sufficient: calibration and outcome performance are monitored alongside stability.</li><li>Top current segment issues are surfaced in the segment monitoring table.</li><li>Recalibration candidates are evaluated against the original champion.</li></ul>
+<h2>Model Health Components</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>as_of</th>
+      <th>overall_health</th>
+      <th>stability</th>
+      <th>discrimination</th>
+      <th>calibration</th>
+      <th>data_quality</th>
+      <th>fairness</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-12</td>
+      <td>89.0</td>
+      <td>100</td>
+      <td>100</td>
+      <td>60.6</td>
+      <td>100</td>
+      <td>88.8</td>
+      <td>RED</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Recent Incidents</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>incident_id</th>
+      <th>detected_month</th>
+      <th>severity</th>
+      <th>metric</th>
+      <th>value</th>
+      <th>amber_threshold</th>
+      <th>red_threshold</th>
+      <th>evidence</th>
+      <th>affected_segment</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>INC-202404-CAL</td>
+      <td>2024-04</td>
+      <td>AMBER</td>
+      <td>Calibration ratio</td>
+      <td>1.154468</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202405-CAL</td>
+      <td>2024-05</td>
+      <td>AMBER</td>
+      <td>Calibration ratio</td>
+      <td>1.251486</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202406-GIN</td>
+      <td>2024-06</td>
+      <td>AMBER</td>
+      <td>Gini decay</td>
+      <td>0.864456</td>
+      <td>0.90</td>
+      <td>0.8</td>
+      <td>ranking power deterioration</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202406-CAL</td>
+      <td>2024-06</td>
+      <td>AMBER</td>
+      <td>Calibration ratio</td>
+      <td>1.225349</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202407-CAL</td>
+      <td>2024-07</td>
+      <td>AMBER</td>
+      <td>Calibration ratio</td>
+      <td>1.233962</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202408-CAL</td>
+      <td>2024-08</td>
+      <td>RED</td>
+      <td>Calibration ratio</td>
+      <td>1.338277</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202409-CAL</td>
+      <td>2024-09</td>
+      <td>RED</td>
+      <td>Calibration ratio</td>
+      <td>1.399854</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202410-CAL</td>
+      <td>2024-10</td>
+      <td>RED</td>
+      <td>Calibration ratio</td>
+      <td>1.499561</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202411-CAL</td>
+      <td>2024-11</td>
+      <td>RED</td>
+      <td>Calibration ratio</td>
+      <td>1.441486</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>INC-202412-CAL</td>
+      <td>2024-12</td>
+      <td>RED</td>
+      <td>Calibration ratio</td>
+      <td>1.651476</td>
+      <td>1.15</td>
+      <td>1.3</td>
+      <td>actual risk exceeds predicted risk</td>
+      <td>Portfolio</td>
+      <td>Open</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Champion vs Challenger</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>period</th>
+      <th>champion_gini</th>
+      <th>champion_ks</th>
+      <th>champion_brier</th>
+      <th>challenger_gini</th>
+      <th>challenger_ks</th>
+      <th>challenger_brier</th>
+      <th>gini_delta</th>
+      <th>brier_delta</th>
+      <th>higher_gini_model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dev</td>
+      <td>0.407258</td>
+      <td>0.296681</td>
+      <td>0.057399</td>
+      <td>0.539534</td>
+      <td>0.402182</td>
+      <td>0.055433</td>
+      <td>0.132276</td>
+      <td>-0.001966</td>
+      <td>Challenger</td>
+    </tr>
+    <tr>
+      <td>oot</td>
+      <td>0.324279</td>
+      <td>0.241759</td>
+      <td>0.053311</td>
+      <td>0.348366</td>
+      <td>0.269570</td>
+      <td>0.053217</td>
+      <td>0.024086</td>
+      <td>-0.000094</td>
+      <td>Challenger</td>
+    </tr>
+    <tr>
+      <td>monitor</td>
+      <td>0.335958</td>
+      <td>0.234681</td>
+      <td>0.071466</td>
+      <td>0.336871</td>
+      <td>0.249086</td>
+      <td>0.071607</td>
+      <td>0.000913</td>
+      <td>0.000141</td>
+      <td>Challenger</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Recalibration Lab</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>period</th>
+      <th>brier</th>
+      <th>actual_bad</th>
+      <th>predicted_bad</th>
+      <th>calibration_ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original</td>
+      <td>monitor</td>
+      <td>0.071466</td>
+      <td>0.0801</td>
+      <td>0.062997</td>
+      <td>1.271494</td>
+    </tr>
+    <tr>
+      <td>Platt</td>
+      <td>monitor</td>
+      <td>0.072028</td>
+      <td>0.0801</td>
+      <td>0.057027</td>
+      <td>1.404606</td>
+    </tr>
+    <tr>
+      <td>Isotonic</td>
+      <td>monitor</td>
+      <td>0.072153</td>
+      <td>0.0801</td>
+      <td>0.057332</td>
+      <td>1.397120</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
