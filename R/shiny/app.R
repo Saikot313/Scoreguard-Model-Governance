@@ -1547,11 +1547,6 @@ server <- function(input, output, session) {
     )
   })
 
-
-  # =======================================================
-  # YOUR EXISTING OUTPUTS
-  # =======================================================
-
   output$performance_plot <- renderPlot({
     x <- mon %>%
       select(
